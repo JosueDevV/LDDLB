@@ -1,14 +1,44 @@
-import { ShoppingBagIcon } from "@heroicons/react/24/solid"
+import { Link } from "react-router"
+import { ShoppingBagIcon } from "@heroicons/react/24/outline"
+
 export const Header = () => {
     return (
-        <header className="flex justify-between px-5 py-10">
-            <h1 className="uppercase tracking-tighter font-black text-2xl"> Las Delicias de La Birria </h1>
+        <header className=" backdrop-blur-sm sticky top-0 z-50 flex justify-between items-center px-6 py-4 bg-white">
+            <Link to="/home" aria-label="Ir al inicio">
+                <h1 className="uppercase tracking-tight font-black text-2xl sm:text-3xl text-red-600">
+                    Las Delicias<br /><span className="text-4xl sm:text-5xl">de La Birria</span>
+                </h1>
+            </Link>
 
-            <div className="flex gap-3 uppercase text-xl font-black items-center">
-                <ShoppingBagIcon className="font-bold w-5"/>
-                <h1>Iniciar Sesion</h1>
-                <h1>Registrate</h1>
-            </div>
+            <nav className="flex gap-5 uppercase text-base font-black items-center" aria-label="Navegación principal">
+                <Link
+                    to="/aboutUs"
+                    className="text-gray-900 hover:text-red-600 transition-colors"
+                >
+                    Nosotros
+                </Link>
+                <Link
+                    to="/login"
+                    className="text-gray-900 hover:text-red-600 transition-colors"
+                >
+                    Iniciar Sesión
+                </Link>
+                <Link
+                    to="/login"
+                    className="px-5 py-2.5 bg-red-600 text-white hover:bg-red-700 transition-colors"
+                >
+                    Regístrate
+                </Link>
+                <button
+                    aria-label="Abrir carrito de compras"
+                    className="relative text-gray-900 hover:text-red-600 transition-colors"
+                >
+                    <ShoppingBagIcon className="w-6 h-6" />
+                    <span className="absolute -top-2 -right-2 bg-red-600 text-white text-[10px] font-black w-4.5 h-4.5 rounded-full flex items-center justify-center">
+                        0
+                    </span>
+                </button>
+            </nav>
         </header>
     )
 }
