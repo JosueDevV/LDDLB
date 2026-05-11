@@ -1,1 +1,44 @@
-@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');@import 'tailwindcss';
+
+@theme {
+  --font-archivo: "Work Sans", sans-serif;
+
+  --color-brand-red: #DC2626;
+  --color-brand-dark-red: #922B21;
+  --color-brand-orange: #F97316;
+  --color-brand-yellow: #FBBF24;
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--font-archivo), sans-serif;
+    background-color: #FAFAFA;
+    color: #2C2C2C;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #FAFAFA;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #DC2626;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #922B21;
+  }
+}

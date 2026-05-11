@@ -7,5 +7,5 @@ export const MainLayout = () => {
             <Header/>
             <Outlet/>
         </>
-    )
+        )
 }
