@@ -25,7 +25,7 @@ export const Header = () => {
                 </Link>
                 <Link
                     to="/login"
-                    className="px-5 py-2.5 bg-black text-[#DC2626] hover:bg-gray-900 active:bg-gray-800 transition-colors"
+                    className="px-5 py-2.5 bg-black text-brand-red hover:bg-gray-900 active:bg-gray-800 transition-colors"
                 >
                     Regístrate
                 </Link>
@@ -34,7 +34,7 @@ export const Header = () => {
                     className="relative text-white hover:text-black transition-colors"
                 >
                     <ShoppingBagIcon className="w-6 h-6" />
-                    <span className="absolute -top-2 -right-2 bg-black text-[#DC2626] text-[10px] font-black w-4.5 h-4.5 rounded-full flex items-center justify-center">
+                    <span className="absolute -top-2 -right-2 bg-black text-white text-[10px] font-black w-4.5 h-4.5 rounded-full flex items-center justify-center">
                         0
                     </span>
                 </button>
