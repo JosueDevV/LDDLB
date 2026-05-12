@@ -3,13 +3,13 @@ import { ShoppingBagIcon } from "@heroicons/react/24/outline"
 
 export const Header = () => {
     return (
-        <header className="sticky top-0 z-50 flex justify-between items-center px-6 py-4 bg-brand-dark-red">
+        <header className="sticky top-0 z-50 flex justify-between items-center px-6 py-4 bg-red-500">
             <Link to="/" aria-label="Ir al inicio">
                 <h1 className="uppercase tracking-tight font-black text-2xl sm:text-3xl text-white">
                     Las Delicias<br /><span className="text-4xl sm:text-5xl text-black">de La Birria</span>
                 </h1>
             </Link>
-
+    
             <nav className="flex gap-5 uppercase font-bold items-center" aria-label="Navegación principal">
                 <Link
                     to="/aboutUs"
