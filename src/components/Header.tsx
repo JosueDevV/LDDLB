@@ -4,7 +4,7 @@ import { ShoppingBagIcon } from "@heroicons/react/24/outline"
 export const Header = () => {
     return (
         <header className="sticky top-0 z-50 flex justify-between items-center px-6 py-4 bg-brand-dark-red">
-            <Link to="/home" aria-label="Ir al inicio">
+            <Link to="/" aria-label="Ir al inicio">
                 <h1 className="uppercase tracking-tight font-black text-2xl sm:text-3xl text-white">
                     Las Delicias<br /><span className="text-4xl sm:text-5xl text-black">de La Birria</span>
                 </h1>
