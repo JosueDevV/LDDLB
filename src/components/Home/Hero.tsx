@@ -4,6 +4,15 @@ export const Hero = () => {
   return (
     <section className='relative min-h-screen flex items-center justify-center bg-brand-red overflow-hidden'>
       
+      <div className='absolute inset-0 opacity-20'>
+        <img 
+          src="/10-PlatoBirria.jpg" 
+          alt="Plato de birria" 
+          className='w-full h-full object-cover'
+          style={{ filter: 'blur(8px) brightness(0.7)', transform: 'scale(1.2)' }}
+        />
+      </div>
+      
       <motion.div
         initial={{ scale: 0.5, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
