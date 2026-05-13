@@ -6,7 +6,7 @@ const galleryImages = [
   "17-Taco Suadero.jpg",
   "13-Birria x Kilo.jpg",
   "25-Torta de Arrachera.jpg",
-  "18-Torta al pastor con queso.jpg"
+  "18-Torta al pastor con queso.jpg",
 ];
 
 export const GallerySection = () => {
@@ -50,10 +50,10 @@ export const GallerySection = () => {
               key={index}
               initial={{ scale: 0.8, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              whileHover={{ scale: 1.05 }}
-              className={`relative overflow-hidden rounded-xl cursor-pointer ${index === 0 || index === 5 ? 'md:col-span-1' : ''}`}
+              viewport={{ amount: 'some' }}
+              transition={{ delay: index * 0.1}}
+              whileHover={{ scale: 1.05 }} 
+              className='relative overflow-hidden rounded-xl cursor-pointer'
             >
               <img 
                 src={src}
@@ -72,7 +72,6 @@ export const GallerySection = () => {
           transition={{ delay: 0.4 }}
           className='mt-12 text-center'
         >
-          <span className='text-4xl'>📍</span>
           <h3 className='text-2xl font-black text-black mt-2 mb-2'>VISÍTANOS</h3>
           <p className='text-gray-600'>Calle 26 #103 Col. Estado de Mexico, Nezahualcoyotl.</p>
           <p className='text-gray-600'>Abierto: Lun-Vie 9:00 AM - 9:00 PM</p>
