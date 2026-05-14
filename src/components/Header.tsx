@@ -50,7 +50,7 @@ export const Header = () => {
 
                 <div className="md:hidden flex gap-6">
                     <button
-                        aria-label="Abrir carrito de compras"
+                        aria-label={open ? 'Cerrar Menu' : 'Abrir Menu'}
                         className="relative text-white hover:text-black transition-colors"
                     >
                         {!open ? (
@@ -76,6 +76,7 @@ export const Header = () => {
                     </button>
                 </div>
             </div>
+            
             { open && (
                 <motion.nav 
                     className="md:hidden my-4 pt-4 flex flex-col gap-4 uppercase font-bold text-center"
